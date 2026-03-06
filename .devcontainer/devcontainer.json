@@ -6,7 +6,6 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"remoteUser": "leanprover",
 	"customizations": {
 		"vscode": {
 			"settings": {
