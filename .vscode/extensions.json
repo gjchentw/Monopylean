@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "leanprover.lean4"
+        "leanprover.lean4",
+        "James-Yu.latex-workshop",
+        "ms-python.python"
     ]
 }

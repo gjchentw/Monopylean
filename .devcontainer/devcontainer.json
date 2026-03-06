@@ -12,10 +12,14 @@
 			"settings": {
 				"terminal.integrated.cwd": "/workspaces/${localWorkspaceFolderBasename}",
 				"python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
-				"terminal.integrated.defaultProfile.linux": "bash"
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"latex-workshop.view.pdf.viewer": "browser",
+				"latex-workshop.latex.recipe.default": "lastUsed"
 			},
 			"extensions": [
-				"leanprover.lean4"
+				"leanprover.lean4",
+				"James-Yu.latex-workshop",
+				"ms-python.python"
 			]
 		}
 	},
