@@ -19,8 +19,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     texlive-lang-chinese \
     # 6. Python 環境 (用於做圖腳本或 Manim)
     python3 \
+    python3-dev \
     python3-venv \
     python3-pip \
     # 7. 輔助工具 (Ghostscript 用於處理 PDF/EPS)
     ghostscript \
+    # 8. leanblueprint
+    graphviz-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
