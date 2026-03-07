@@ -9,11 +9,19 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"terminal.integrated.cwd": "/workspaces/${localWorkspaceFolderBasename}",
 				"python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
-				"terminal.integrated.defaultProfile.linux": "bash",
 				"latex-workshop.view.pdf.viewer": "browser",
-				"latex-workshop.latex.recipe.default": "lastUsed"
+				"latex-workshop.latex.recipe.default": "lastUsed",
+				"terminal.integrated.cwd": "/workspaces/${localWorkspaceFolderBasename}",
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"args": [
+							"-l"
+						]
+					}
+				}
 			},
 			"extensions": [
 				"leanprover.lean4",
