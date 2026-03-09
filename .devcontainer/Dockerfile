@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:trixie
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    pkg-config dvisvgm \
     # 1. LaTeX 核心與數學基礎 (amsmath, amsthm, amssymb)
     texlive-latex-recommended \
     texlive-latex-extra \
@@ -15,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     texlive-fonts-recommended \
     texlive-fonts-extra \
     # 5. 中文支援 (Noto Sans CJK 用於標註)
+    latexmk \
     fonts-noto-cjk \
     texlive-lang-chinese \
     # 6. Python 環境 (用於做圖腳本或 Manim)
@@ -25,5 +27,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # 7. 輔助工具 (Ghostscript 用於處理 PDF/EPS)
     ghostscript \
     # 8. leanblueprint
-    graphviz-dev \
+    graphviz graphviz-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
