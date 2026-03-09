@@ -40,13 +40,13 @@ make mathlib
 
 ```bash
 sudo apt update && sudo apt install -y \
-	git curl ca-certificates bash make \
-	texlive-latex-recommended texlive-latex-extra texlive-science \
-	texlive-pictures texlive-pstricks texlive-xetex texlive-luatex \
-	texlive-fonts-recommended texlive-fonts-extra \
-	fonts-noto-cjk texlive-lang-chinese \
-	python3 python3-dev python3-venv python3-pip \
-	ghostscript graphviz-dev
+  git curl ca-certificates bash make pkg-config dvisvgm \
+  texlive-latex-recommended texlive-latex-extra texlive-science \
+  texlive-pictures texlive-pstricks texlive-xetex texlive-luatex \
+  texlive-fonts-recommended texlive-fonts-extra \
+  latexmk fonts-noto-cjk texlive-lang-chinese \
+  python3 python3-dev python3-venv python3-pip \
+  ghostscript graphviz graphviz-dev
 git clone https://github.com/<your-account>/MyLeanProof.git
 cd MyLeanProof
 curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
